@@ -5,7 +5,15 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style TargetType="Button">
+            <Style x:Key="buttonRed" TargetType="Button">
+                <Setter Property="BackgroundColor"
+                        Value="Red"/>
+            </Style>
+            <Style x:Key="buttonGreen" TargetType="Button">
+                <Setter Property="BackgroundColor"
+                        Value="Green"/>
+            </Style>
+            <Style x:Key="buttonBlue" TargetType="Button">
                 <Setter Property="BackgroundColor"
                         Value="Blue"/>
             </Style>
@@ -16,18 +24,18 @@
         <Button Text="Style me"
                 HeightRequest="200" />
         <StackLayout Orientation="Horizontal">
-            <StackLayout.Resources>
+            <!--<StackLayout.Resources>
                 <ResourceDictionary>
                     <Style TargetType="Button">
                         <Setter Property="BackgroundColor"
                                 Value="Green"/>
                     </Style>
                 </ResourceDictionary>
-            </StackLayout.Resources>
+            </StackLayout.Resources>-->
 
-            <Button Text="Button 1" />
-            <Button Text="Button 2" />
-            <Button Text="Button 3" />
+            <Button Text="Button 1" Style="{StaticResource buttonRed}" />
+            <Button Text="Button 2" Style="{StaticResource buttonGreen}"/>
+            <Button Text="Button 3" Style="{StaticResource buttonBlue}"/>
         </StackLayout>
     </StackLayout>
 
