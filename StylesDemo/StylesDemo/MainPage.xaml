@@ -35,7 +35,7 @@
 
             <Button Text="Button 1" Style="{StaticResource buttonRed}" />
             <Button Text="Button 2" Style="{StaticResource buttonGreen}"/>
-            <Button Text="Button 3" Style="{StaticResource buttonBlue}"/>
+            <Button Text="Button 3" Style="{StaticResource buttonStyle}"/>
         </StackLayout>
     </StackLayout>
 
